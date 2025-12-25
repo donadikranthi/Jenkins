@@ -5,7 +5,9 @@ Partition the disk
 growpart /dev/nvme0n1 4
 
 lvextend -L +10G /dev/mapper/RootVG-varVol
+
 lvextend -L +10G /dev/mapper/RootVG-rootVol
+
 lvextend -l +100%FREE /dev/mapper/RootVG-homeVol
 
 xfs_growfs /
