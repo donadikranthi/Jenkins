@@ -1,4 +1,4 @@
-Jenkins Setup
+# Jenkins Setup
 
 Partition the disk
 
@@ -26,7 +26,7 @@ sudo systemctl daemon-reload
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 
-Plugins:
+# Plugins:
 
 Stage view
 
