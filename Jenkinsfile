@@ -15,7 +15,7 @@ pipeline {
                 script {
                     sh ""
                     echo "Building"
-                    "" 
+                    }    "" 
             }
         }
         stage('Deploy') {
