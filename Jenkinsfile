@@ -27,6 +27,7 @@ pipeline {
             }
         }
     }
+    }
         post {
             always {
                 echo "I will always say Hello World!"
@@ -39,4 +40,4 @@ pipeline {
                 echo "I failed!"
             }
         }
-        }
+}
