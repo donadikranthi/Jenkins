@@ -1,5 +1,6 @@
 pipeline {
-    agent any // This means that the pipeline can run on any available agent
+       agent node {
+        label 'AGENT-1' // Replace with your actual node label
     stages {  
         stage('Build') {
             steps {
