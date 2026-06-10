@@ -1,10 +1,10 @@
 pipeline {
        agent {
         node {
-            label 'AGENT-1' // Replace with your actual node label
+            label 'AGENT' // Replace with your actual node label
        }
        }
-       
+
     stages {  
         stage('Build') {
             steps {
