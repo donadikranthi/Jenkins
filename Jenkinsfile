@@ -4,7 +4,13 @@ pipeline {
                label 'AGENT-1' // Replace with your actual node label
        }
  }
-
+  environment {
+        COURSE = "Jenkins"
+    }
+    // options {
+    //     timeout(time: 10, unit: 'MINUTES') 
+    //     disableConcurrentBuilds()
+    }
     stages {  
         stage('Build') {
             steps {

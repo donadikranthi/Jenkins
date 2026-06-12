@@ -4,9 +4,7 @@ pipeline {
                label 'AGENT-1'
        }
  }
-  environment {
-        COURSE = "Jenkins" // Define any environment variables here, e.g., JAVA_HOME, PATH, etc.
-        // Example: JAVA_HOME = '/path/to/java'
+  
     }
 
     stages {  
