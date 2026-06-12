@@ -8,10 +8,10 @@ pipeline {
     environment {
         COURSE = "Jenkins"
     }
-    // options {
-    //     timeout(time: 10, unit: 'MINUTES') 
-    //     disableConcurrentBuilds()
-    // }
+    options {
+        timeout(time: 10, unit: 'MINUTES') 
+        disableConcurrentBuilds()
+    }
     
     // parameters {
     //     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
@@ -58,9 +58,9 @@ pipeline {
             //         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
             //     }
             // }
-            when { 
-                expression { "$params.DEPLOY" == "true" }
-            }
+            // // when { 
+            // //     expression { "$params.DEPLOY" == "true" }
+            // }
             steps {
                 script{
                     sh """
