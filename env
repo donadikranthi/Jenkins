@@ -1,29 +1,84 @@
-Started by user Kranthi kumar
-Obtained Jenkinsfile from git https://github.com/donadikranthi/Jenkins.git
-[Pipeline] Start of Pipeline
-[Pipeline] node
-Running on AGENT-1 in /home/ec2-user/jenkins/workspace/Hello-pipeline
-[Pipeline] {
-[Pipeline] stage
-[Pipeline] { (Declarative: Checkout SCM)
-[Pipeline] checkout
-Selected Git installation does not exist. Using Default
-The recommended git tool is: NONE
-using credential SSH-AUTH
-Cloning the remote Git repository
-Avoid second fetch
-Checking out Revision f4fcc64f1c8b6b7ebaa1315dc0a749000675da78 (refs/remotes/origin/main)
-Commit message: "main"
-Cloning repository https://github.com/donadikranthi/Jenkins.git
- > git init /home/ec2-user/jenkins/workspace/Hello-pipeline # timeout=10
-Fetching upstream changes from https://github.com/donadikranthi/Jenkins.git
- > git --version # timeout=10
- > git --version # 'git version 2.47.3'
-using GIT_ASKPASS to set credentials SSH-AUTH
- > git fetch --tags --force --progress -- https://github.com/donadikranthi/Jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git config remote.origin.url https://github.com/donadikranthi/Jenkins.git # timeout=10
- > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
- > git config core.sparsecheckout # timeout=10
- > git checkout -f f4fcc64f1c8b6b7ebaa1315dc0a749000675da78 # timeout=10
- > git rev-list --no-walk d7f201604aee995b357822c2a1d518830fdc5bdf # timeout=10
++ echo Building
+Building
++ echo Jenkins
+Jenkins
++ sleep 10
++ env
+SHELL=/bin/bash
+RUN_TESTS_DISPLAY_URL=http://44.220.90.221:8080/job/Hello-pipeline/17/display/redirect?page=tests
+COURSE=Jenkins
+HISTSIZE=10000
+JENKINS_SERVER_COOKIE=durable-3128008ceb839638f349bfc32a94a474d34608f358d2d874d361641924572ffc
+GIT_PREVIOUS_SUCCESSFUL_COMMIT=f4fcc64f1c8b6b7ebaa1315dc0a749000675da78
+HISTTIMEFORMAT=%d/%m/%y %T 
+AWS_DEFAULT_REGION=us-east-1
+RUN_CHANGES_DISPLAY_URL=http://44.220.90.221:8080/job/Hello-pipeline/17/display/redirect?page=changes
+HUDSON_HOME=/var/lib/jenkins
+PWD=/home/ec2-user/jenkins/workspace/Hello-pipeline
+LOGNAME=ec2-user
+XDG_SESSION_TYPE=tty
+BUILD_URL=http://44.220.90.221:8080/job/Hello-pipeline/17/
+ANSIBLE_DEPRECATION_WARNINGS=False
+JOB_URL=http://44.220.90.221:8080/job/Hello-pipeline/
+BUILD_NUMBER=17
+MOTD_SHOWN=pam
+JENKINS_NODE_COOKIE=5b7fef52-4dd1-4c68-b94b-ad2743830928
+BUILD_DISPLAY_NAME=#17
+HOME=/home/ec2-user
+LANG=C.UTF-8
+ANSIBLE_FORCE_COLOR=1
+JENKINS_URL=http://44.220.90.221:8080/
+JOB_BASE_NAME=Hello-pipeline
+PROMPT_COMMAND=$(history -w)
+JOB_NAME=Hello-pipeline
+RUN_DISPLAY_URL=http://44.220.90.221:8080/job/Hello-pipeline/17/display/redirect
+SSH_CONNECTION=44.220.90.221 43658 172.31.8.29 22
+JOB_DISPLAY_URL=http://44.220.90.221:8080/job/Hello-pipeline/display/redirect
+WORKSPACE=/home/ec2-user/jenkins/workspace/Hello-pipeline
+GIT_PREVIOUS_COMMIT=f4fcc64f1c8b6b7ebaa1315dc0a749000675da78
+HUDSON_URL=http://44.220.90.221:8080/
+XDG_SESSION_CLASS=user
+NODE_NAME=AGENT-1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+USER=ec2-user
+HUDSON_SERVER_COOKIE=6b6bd6b275f8906d
+GIT_URL=https://github.com/donadikranthi/Jenkins.git
+SHLVL=2
+BUILD_TAG=jenkins-Hello-pipeline-17
+EXECUTOR_NUMBER=1
+HUDSON_COOKIE=317d7616-8215-4cbd-98c2-cb893b638549
+SYSTEMD_PAGER=cat
+XDG_SESSION_ID=6
+JENKINS_HOME=/var/lib/jenkins
+XDG_RUNTIME_DIR=/run/user/1001
+SSH_CLIENT=44.220.90.221 43658 22
+REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
+DEBUGINFOD_IMA_CERT_PATH=/etc/keys/ima:
+GIT_COMMIT=fbb3724f5d8b6d9eb10331c523e2aa2727c5a660
+which_declare=declare -f
+NODE_LABELS=AGENT-1
+STAGE_NAME=Build
+AWS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
+WORKSPACE_TMP=/home/ec2-user/jenkins/workspace/Hello-pipeline@tmp
+XDG_DATA_DIRS=/home/ec2-user/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+PATH=/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+RUN_ARTIFACTS_DISPLAY_URL=http://44.220.90.221:8080/job/Hello-pipeline/17/display/redirect?page=artifacts
+CI=true
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+GIT_BRANCH=origin/main
+BUILD_ID=17
+OLDPWD=/home/ec2-user
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+_=/usr/bin/env
++ echo 'Hello Mr Jenkins'
+Hello Mr Jenkins
++ echo 'Biography: '
+Biography: 
++ echo 'Toggle: false'
+Toggle: false
++ echo 'Choice: One'
+Choice: One
++ echo 'Password: SECRET'
+Password: SECRET
