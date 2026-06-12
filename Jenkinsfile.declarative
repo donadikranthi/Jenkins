@@ -4,7 +4,7 @@ pipeline {
                label 'AGENT-1'
        }
  }
-  
+}
  environment {
         COURSE = "Jenkins"
     }
@@ -21,6 +21,9 @@ pipeline {
                 // Add your build commands here, e.g., sh 'mvn clean install'
             }
         }
+
+        }
+    }
         stage('Test') {
             steps {
                  script {
