@@ -4,29 +4,34 @@ pipeline {
                label 'AGENT-1' // Replace with your actual node label
        }
  }
-  environment {
-        COURSE = "Jenkins"
-    }
-    // options {
-    //     timeout(time: 10, unit: 'MINUTES') 
-    //     disableConcurrentBuilds()
-    }
+
     stages {  
         stage('Build') {
             steps {
-                echo 'Building...'
+                 script {
+                    sh """
+                    echo "Building..."
+                    echo $COURSE
+                    """
+                    
                 // Add your build commands here, e.g., sh 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                 script {
+                    sh """
+                    echo "Testing..."
+                    """
                 // Add your test commands here, e.g., sh 'mvn test'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                 script {
+                    sh """
+                    echo "Deploying..."
+                    """
                 // Add your deploy commands here, e.g., sh 'mvn deploy'
             }
         }
