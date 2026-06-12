@@ -25,4 +25,17 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'I will always says hello.'
+            cleanWs() // Clean workspace after the pipeline execution
+        }
+        success {
+            echo 'Pipeline succeeded.'
+        }
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
+
 }
