@@ -5,7 +5,7 @@ pipeline {
        }
  }
   environment {
-        COURSE = 'Jenkins' // Define any environment variables here, e.g., JAVA_HOME, PATH, etc.
+        COURSE = "Jenkins" // Define any environment variables here, e.g., JAVA_HOME, PATH, etc.
         // Example: JAVA_HOME = '/path/to/java'
     }
 
